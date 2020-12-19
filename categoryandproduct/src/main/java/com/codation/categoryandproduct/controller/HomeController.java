@@ -23,7 +23,7 @@ import com.codation.categoryandproduct.repository.SubChildCategoryRepository;
 @RestController
 @RequestMapping("/shopping")
 public class HomeController {
-
+                                      // this is home controller
 	@Autowired
 	ServiceImpl serviceImpl;
 	@Autowired
