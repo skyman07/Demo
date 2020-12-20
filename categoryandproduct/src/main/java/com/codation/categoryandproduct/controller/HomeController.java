@@ -23,7 +23,7 @@ import com.codation.categoryandproduct.repository.SubChildCategoryRepository;
 @RestController
 @RequestMapping("/shopping")
 public class HomeController {
-
+                                          // master has done some changes
 	@Autowired
 	ServiceImpl serviceImpl;
 	@Autowired
@@ -32,7 +32,7 @@ public class HomeController {
 	@PostMapping("/category")
 	public ResponseEntity<String> addCategory(@RequestBody Category theCategory) {
 
-		if (theCategory != null) {
+		if (theCategory != null) { 
 
 			String response = serviceImpl.addCategory(theCategory);
 			return new ResponseEntity<String>(response, HttpStatus.CREATED);
